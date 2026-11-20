@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>女神漫画 - 正版在线漫画阅读平台 | 海量国漫日漫韩漫连载</title>
+<meta name="keywords" content="女神漫画,在线漫画,漫画阅读,国漫推荐,日韩漫画,漫画排行榜,免费漫画,漫画更新,热门漫画,漫画分类">
+<meta name="description" content="女神漫画是专业的在线漫画阅读平台，提供海量正版漫画资源，涵盖国漫、日漫、韩漫等多种类型。每日更新热门连载，支持手机平板多端阅读，快来发现你喜欢的漫画世界！">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="女神漫画">
+<meta name="theme-color" content="#f2547d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="女神漫画">
+<meta property="og:title" content="女神漫画｜随时翻开就舍不得关掉的在线漫画书架">
+<meta property="og:description" content="把国漫、日漫、韩漫分门别类摆好，榜单跟着读者的真实追更热度滚动，手机与平板之间切换不用重新找进度。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="女神漫画｜随时翻开就舍不得关掉的在线漫画书架">
+<meta name="twitter:description" content="分类清晰、榜单常更新、跨端不丢进度的漫画阅读站点，找新坑和补旧坑都在同一个页面里完成。">
+<style>
+:root{
+--pink:#f2547d;
+--pink-deep:#d93a66;
+--plum:#3b1c33;
+--ink:#2c2230;
+--gray:#6d6470;
+--line:#f0e2e8;
+--bg:#fffafb;
+--card:#ffffff;
+--radius:16px;
+--shadow:0 10px 30px rgba(190,60,105,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans SC",sans-serif;
+color:var(--ink);
+background:var(--bg);
+line-height:1.85;
+font-size:16px;
+-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.site-header{
+position:sticky;top:0;z-index:50;
+background:rgba(255,250,251,.92);
+backdrop-filter:blur(10px);
+border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px}
+.brand-mark{
+width:34px;height:34px;border-radius:11px;
+background:linear-gradient(135deg,#ff85a6,#f2547d 55%,#c72f5c);
+display:flex;align-items:center;justify-content:center;
+color:#fff;font-size:17px;font-weight:800;
+box-shadow:0 6px 16px rgba(242,84,125,.35);
+}
+.brand-text small{display:block;font-size:11px;font-weight:500;color:var(--gray);letter-spacing:2px;line-height:1.2}
+.nav{display:flex;gap:26px;font-size:15px;color:#4c404e}
+.nav a{padding:6px 0;position:relative}
+.nav a:hover{color:var(--pink-deep)}
+.nav a:hover::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--pink)}
+.header-cta{
+background:linear-gradient(135deg,#ff7ba0,#e63f6d);
+color:#fff;font-size:14px;font-weight:600;
+padding:9px 20px;border-radius:999px;
+box-shadow:0 8px 20px rgba(230,63,109,.28);
+white-space:nowrap;
+}
+.hero{
+position:relative;overflow:hidden;
+background:linear-gradient(160deg,#fff2f6 0%,#ffe9f0 45%,#fdf3ff 100%);
+padding:72px 0 64px;
+}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(4px);opacity:.55}
+.hero::before{width:320px;height:320px;right:-90px;top:-110px;background:radial-gradient(circle at 35% 35%,#ffc2d5,#ffd9e6 60%,transparent 72%)}
+.hero::after{width:240px;height:240px;left:-80px;bottom:-90px;background:radial-gradient(circle at 60% 40%,#dcb8ff,#ecd6ff 60%,transparent 72%)}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero-tag{
+display:inline-block;font-size:13px;font-weight:600;color:var(--pink-deep);
+background:#fff;border:1px solid #ffd3e0;border-radius:999px;
+padding:5px 14px;margin-bottom:18px;letter-spacing:.5px;
+}
+.hero h1{font-size:40px;line-height:1.35;letter-spacing:-.5px;margin-bottom:16px;color:var(--plum)}
+.hero h1 em{font-style:normal;color:var(--pink-deep);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:9px;background:rgba(255,146,177,.32);border-radius:4px;z-index:-1}
+.hero p{font-size:16.5px;color:#5b4f5c;max-width:560px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn-primary{
+display:inline-block;background:linear-gradient(135deg,#ff7ba0,#e63f6d);
+color:#fff;font-weight:600;padding:13px 30px;border-radius:999px;
+box-shadow:0 12px 26px rgba(230,63,109,.30);
+}
+.btn-ghost{
+display:inline-block;background:#fff;color:var(--plum);font-weight:600;
+padding:13px 30px;border-radius:999px;border:1px solid #f4d4df;
+}
+.hero-stats{display:flex;flex-wrap:wrap;gap:30px;margin-top:36px;padding-top:26px;border-top:1px dashed #f0c9d7}
+.hero-stats div strong{display:block;font-size:24px;color:var(--pink-deep);line-height:1.3}
+.hero-stats div span{font-size:13px;color:var(--gray)}
+.hero-panel{
+background:#fff;border-radius:22px;padding:22px;box-shadow:0 22px 48px rgba(190,60,105,.14);
+border:1px solid #ffe1ea;
+}
+.hero-panel h2{font-size:15px;color:var(--plum);margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}
+.hero-panel h2 span{font-size:12px;color:var(--pink-deep);font-weight:500}
+.mini-list{list-style:none;display:grid;gap:12px}
+.mini-list li{display:flex;align-items:center;gap:12px}
+.mini-cover{
+width:44px;height:58px;border-radius:8px;flex:none;
+background:linear-gradient(160deg,#ffd0de,#e8b4ff);
+position:relative;overflow:hidden;
+}
+.mini-cover b{position:absolute;left:0;right:0;bottom:0;text-align:center;font-size:9px;color:#fff;background:rgba(59,28,51,.42);line-height:15px}
+.mini-cover.c2{background:linear-gradient(160deg,#cfd8ff,#9fb4ff)}
+.mini-cover.c3{background:linear-gradient(160deg,#ffe2b8,#ffb88c)}
+.mini-cover.c4{background:linear-gradient(160deg,#c8f3e4,#8fdcc4)}
+.mini-cover.c5{background:linear-gradient(160deg,#ffd4d4,#ff9d9d)}
+.mini-info{flex:1;min-width:0}
+.mini-info b{display:block;font-size:13.5px;color:var(--plum);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini-info span{font-size:12px;color:var(--gray)}
+.mini-rank{font-size:13px;font-weight:800;color:#e9c0cf;font-style:italic;width:18px;text-align:right}
+.section{padding:64px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 40px}
+.section-head h2{font-size:30px;color:var(--plum);letter-spacing:-.3px;margin-bottom:12px}
+.section-head h2::after{content:"";display:block;width:44px;height:4px;border-radius:3px;background:linear-gradient(90deg,#ff7ba0,#e63f6d);margin:14px auto 0}
+.section-head p{color:var(--gray);font-size:15.5px}
+.intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.intro-card{
+background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+padding:28px 24px;box-shadow:var(--shadow);
+}
+.intro-card .ico{
+width:44px;height:44px;border-radius:13px;margin-bottom:16px;
+background:linear-gradient(135deg,#ffe3ec,#ffd0e0);
+color:var(--pink-deep);font-weight:800;font-size:19px;
+display:flex;align-items:center;justify-content:center;
+}
+.intro-card h3{font-size:17.5px;color:var(--plum);margin-bottom:9px}
+.intro-card p{font-size:14.5px;color:var(--gray);line-height:1.85}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat-card{
+background:#fff;border:1px solid var(--line);border-radius:14px;
+padding:22px 20px;transition:transform .18s ease,box-shadow .18s ease;
+}
+.cat-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(190,60,105,.13)}
+.cat-card h3{font-size:16px;color:var(--plum);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.cat-card h3 i{width:6px;height:6px;border-radius:50%;background:var(--pink);flex:none}
+.cat-card p{font-size:13.5px;color:var(--gray);line-height:1.8}
+.cat-card .tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:7px}
+.cat-card .tags span{font-size:12px;color:#a8557a;background:#fff1f5;border-radius:6px;padding:3px 9px}
+.rank-section{background:linear-gradient(180deg,#fff6f9,#fffafc)}
+.tabs{display:flex;justify-content:center;gap:12px;margin-bottom:30px;flex-wrap:wrap}
+.tab-btn{
+border:1px solid #f3d3de;background:#fff;color:#6d6470;
+font-size:14px;font-weight:600;padding:9px 24px;border-radius:999px;cursor:pointer;
+font-family:inherit;
+}
+.tab-btn.active{background:linear-gradient(135deg,#ff7ba0,#e63f6d);border-color:transparent;color:#fff;box-shadow:0 8px 18px rgba(230,63,109,.25)}
+.tab-pane{display:none}
+.tab-pane.active{display:block}
+.rank-list{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rank-list li{
+background:#fff;border:1px solid var(--line);border-radius:13px;
+padding:16px 18px;display:flex;align-items:center;gap:14px;
+}
+.rank-no{
+width:26px;height:26px;border-radius:9px;flex:none;
+display:flex;align-items:center;justify-content:center;
+font-size:13px;font-weight:800;color:#fff;
+background:linear-gradient(135deg,#ffc0d2,#f7a2bd);
+}
+.rank-list li:nth-child(1) .rank-no{background:linear-gradient(135deg,#ffb02e,#e8352f)}
+.rank-list li:nth-child(2) .rank-no{background:linear-gradient(135deg,#ff9e6d,#ee7a3a)}
+.rank-list li:nth-child(3) .rank-no{background:linear-gradient(135deg,#ffd166,#f0a725)}
+.rank-body{flex:1;min-width:0}
+.rank-body strong{display:block;font-size:15px;color:var(--plum);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-body span{font-size:12.5px;color:var(--gray)}
+.rank-state{font-size:12px;color:var(--pink-deep);background:#fff0f5;border-radius:6px;padding:3px 9px;white-space:nowrap}
+.update-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.update-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px}
+.update-card .step{
+font-size:12px;font-weight:700;color:var(--pink-deep);letter-spacing:1px;margin-bottom:10px;
+}
+.update-card h3{font-size:17px;color:var(--plum);margin-bottom:10px}
+.update-card p{font-size:14.5px;color:var(--gray)}
+.guide{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.guide-list{list-style:none;counter-reset:g;display:grid;gap:16px}
+.guide-list li{
+background:#fff;border:1px solid var(--line);border-left:3px solid var(--pink);
+border-radius:12px;padding:16px 20px;
+font-size:14.5px;color:#544a56;
+}
+.guide-list li b{display:block;color:var(--plum);font-size:15.5px;margin-bottom:4px}
+.tips-box{background:linear-gradient(150deg,#fff0f5,#fdf1ff);border-radius:var(--radius);padding:30px 26px;border:1px solid #ffe0ea}
+.tips-box h3{font-size:18px;color:var(--plum);margin-bottom:14px}
+.tips-box ul{list-style:none;display:grid;gap:12px}
+.tips-box li{font-size:14.5px;color:#5f5360;padding-left:20px;position:relative}
+.tips-box li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:8px;border-radius:2px;background:var(--pink);transform:rotate(45deg)}
+.faq-list{max-width:900px;margin:0 auto;display:grid;gap:14px}
+.faq-item{
+background:#fff;border:1px solid var(--line);border-radius:13px;
+padding:4px 22px;box-shadow:0 6px 18px rgba(190,60,105,.05);
+}
+.faq-item summary{
+cursor:pointer;font-size:16px;font-weight:600;color:var(--plum);
+padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink-deep);font-size:20px;font-weight:400;line-height:1}
+.faq-item[open] summary::after{content:"−"}
+.faq-item p{font-size:14.5px;color:var(--gray);padding:0 0 18px;border-top:1px dashed #f2dde5;padding-top:14px}
+.cta-band{
+background:linear-gradient(135deg,#3b1c33,#5c2748 55%,#7a3352);
+border-radius:22px;padding:48px 40px;text-align:center;color:#fff;
+}
+.cta-band h2{font-size:27px;margin-bottom:12px}
+.cta-band p{color:#f2d7e3;font-size:15px;max-width:640px;margin:0 auto 26px}
+.site-footer{
+margin-top:70px;border-top:1px solid var(--line);background:#fff;
+padding:44px 0 30px;
+}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:32px}
+.footer-grid h4{font-size:14px;color:var(--plum);margin-bottom:12px;letter-spacing:.5px}
+.footer-grid p{font-size:13.5px;color:var(--gray);line-height:1.9}
+.footer-grid ul{list-style:none;display:grid;gap:8px}
+.footer-grid ul a{font-size:13.5px;color:var(--gray)}
+.footer-grid ul a:hover{color:var(--pink-deep)}
+.copyright{border-top:1px solid var(--line);padding-top:20px;font-size:13px;color:#9a8f9c;text-align:center;line-height:2}
+@media (max-width:980px){
+.hero-inner{grid-template-columns:1fr;gap:34px}
+.hero h1{font-size:32px}
+.intro-grid,.update-grid{grid-template-columns:repeat(2,1fr)}
+.cat-grid{grid-template-columns:repeat(2,1fr)}
+.guide{grid-template-columns:1fr}
+.rank-list{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+.nav{display:none}
+}
+@media (max-width:640px){
+.hero{padding:48px 0 42px}
+.hero h1{font-size:26px}
+.section{padding:46px 0}
+.section-head h2{font-size:23px}
+.intro-grid,.update-grid,.cat-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}
+.cta-band{padding:34px 22px}
+.header-cta{padding:8px 15px;font-size:13px}
+}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="#top">
+<span class="brand-mark">女</span>
+<span class="brand-text">女神漫画<small>NSMANHUA</small></span>
+</a>
+<nav class="nav" aria-label="主导航">
+<a href="#intro">平台介绍</a>
+<a href="#category">漫画分类</a>
+<a href="#ranking">热门榜单</a>
+<a href="#update">更新机制</a>
+<a href="#guide">阅读指南</a>
+<a href="#faq">常见问题</a>
+</nav>
+<a class="header-cta" href="#ranking">开始追更</a>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap hero-inner">
+<div>
+<span class="hero-tag">正版授权 · 每日更新 · 多端同步</span>
+<h1>把喜欢的漫画<br>放进一个<em>随时能翻开</em>的书架</h1>
+<p>女神漫画是一个专注于正版漫画阅读的在线平台。国漫、日漫、韩漫按照题材与受众拆成清晰的分类入口，连载进度与章节信息集中呈现，读者不必在多个站点之间来回跳转，就能把正在追的作品和新发现的作品放在同一处管理。</p>
+<div class="hero-actions">
+<a class="btn-primary" href="#category">浏览全部分类</a>
+<a class="btn-ghost" href="#guide">查看阅读指南</a>
+</div>
+<div class="hero-stats">
+<div><strong>10+</strong><span>细分题材分类</span></div>
+<div><strong>每日</strong><span>连载章节更新</span></div>
+<div><strong>3 端</strong><span>手机 / 平板 / 电脑</span></div>
+</div>
+</div>
+<aside class="hero-panel" aria-label="今日热门速览">
+<h2>今日热门速览 <span>实时滚动</span></h2>
+<ul class="mini-list">
+<li><span class="mini-cover c2"><b>都市</b></span><span class="mini-info"><b>合租室友的秘密身份</b><span>更新至第 128 话</span></span><span class="mini-rank">01</span></li>
+<li><span class="mini-cover"><b>恋爱</b></span><span class="mini-info"><b>她的心跳有回声</b><span>更新至第 96 话</span></span><span class="mini-rank">02</span></li>
+<li><span class="mini-cover c3"><b>奇幻</b></span><span class="mini-info"><b>星轨之上的契约</b><span>更新至第 74 话</span></span><span class="mini-rank">03</span></li>
+<li><span class="mini-cover c4"><b>治愈</b></span><span class="mini-info"><b>开在巷口的花店</b><span>更新至第 61 话</span></span><span class="mini-rank">04</span></li>
+<li><span class="mini-cover c5"><b>悬疑</b></span><span class="mini-info"><b>第七封未寄出的信</b><span>更新至第 45 话</span></span><span class="mini-rank">05</span></li>
+</ul>
+</aside>
+</div>
+</section>
+
+<section class="section" id="intro">
+<div class="wrap">
+<div class="section-head">
+<h2>关于女神漫画</h2>
+<p>从内容组织到阅读体验，把「找得到、看得顺、追得下去」这三件事做扎实</p>
+</div>
+<div class="intro-grid">
+<article class="intro-card">
+<div class="ico">正</div>
+<h3>正版内容为底</h3>
+<p>平台收录的作品以正规授权内容为主，章节由版权方或授权渠道提供，页面顶部标注作品状态、更新频率与连载进度，读者在进入阅读前就能判断这部作品是否适合自己。</p>
+</article>
+<article class="intro-card">
+<div class="ico">分</div>
+<h3>分类逻辑清晰</h3>
+<p>分类不止按国漫、日漫、韩漫这种地域维度切分，还叠加了恋爱、奇幻、悬疑、治愈等题材标签。读者可以从任意一个入口进入，再通过标签组合收窄范围，减少无效翻页。</p>
+</article>
+<article class="intro-card">
+<div class="ico">顺</div>
+<h3>阅读动线顺畅</h3>
+<p>阅读页采用纵向滚动与翻页两种模式，图片按屏幕宽度自适应，加载时预留占位避免页面跳动。退出后再次打开，系统会回到上次停留的章节位置，减少重复查找。</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="category">
+<div class="wrap">
+<div class="section-head">
+<h2>漫画面分类别</h2>
+<p>按题材偏好进入，再用热门标签继续收窄，是找新作品最快的路径</p>
+</div>
+<div class="cat-grid">
+<div class="cat-card">
+<h3><i></i>都市情感</h3>
+<p>以现代城市为背景，聚焦职场、合租、成长与关系变化，节奏明快，适合通勤与睡前碎片时间阅读。</p>
+<div class="tags"><span>职场</span><span>合租</span><span>成长</span></div>
+</div>
+<div class="cat-card">
+<h3><i></i>青春恋爱</h3>
+<p>校园到社会的情感线，人物关系推进细腻，重视心理描写与情绪铺垫，是平台上收藏率较高的类别之一。</p>
+<div class="tags"><span>校园</span><span>甜宠</span><span>双向奔赴</span></div>
+</div>
+<div class="cat-card">
+<h3><i></i>奇幻冒险</h3>
+<p>构建完整世界观的幻想题材，包含异世界、契约、能力体系等设定，画面信息密度高，适合喜欢沉浸式阅读的读者。</p>
+<div class="tags"><span>异世界</span><span>契约</span><span>冒险</span></div>
+</div>
+<div class="cat-card">
+<h3><i></i>悬疑推理</h3>
+<p>以案件、谜题与线索推动剧情，章节结尾常留钩子，适合连续追读，也适合读完后回看前文寻找伏笔。</p>
+<div class="tags"><span>案件</span><span>推理</span><span>反转</span></div>
+</div>
+<div class="cat-card">
+<h3><i></i>治愈日常</h3>
+<p>节奏舒缓、情绪温和的生活流作品，单元式结构为主，随时停下也不影响理解，适合压力较大的时段阅读。</p>
+<div class="tags"><span>日常</span><span>生活流</span><span>暖心</span></div>
+</div>
+<div class="cat-card">
+<h3><i></i>国漫精选</h3>
+<p>本土创作团队作品集中入口，画风与叙事贴近中文读者习惯，题材覆盖古风、仙侠、现代都市等多个方向。</p>
+<div class="tags"><span>古风</span><span>仙侠</span><span>本土原创</span></div>
+</div>
+<div class="cat-card">
+<h3><i></i>日漫专区</h3>
+<p>强调分镜节奏与画面表现力的作品集合，涵盖少年、少女、青年等不同受众向，适合关注作画细节的读者。</p>
+<div class="tags"><span>少年向</span><span>少女向</span><span>分镜</span></div>
+</div>
+<div class="cat-card">
+<h3><i></i>韩漫连载</h3>
+<p>以竖屏条漫为主要呈现形式，色彩饱满、章节信息量集中，适配手机单手握持的阅读场景。</p>
+<div class="tags"><span>条漫</span><span>彩色</span><span>竖屏</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section rank-section" id="ranking">
+<div class="wrap">
+<div class="section-head">
+<h2>热门漫画榜单</h2>
+<p>榜单依据读者阅读与追更行为滚动计算，切换标签可查看不同维度的排序结果</p>
+</div>
+<div class="tabs" role="tablist" aria-label="榜单维度切换">
+<button class="tab-btn active" type="button" data-tab="hot" role="tab" aria-selected="true">人气榜</button>
+<button class="tab-btn" type="button" data-tab="fresh" role="tab" aria-selected="false">更新榜</button>
+<button class="tab-btn" type="button" data-tab="praise" role="tab" aria-selected="false">口碑榜</button>
+</div>
+<div class="tab-pane active" id="pane-hot" role="tabpanel">
+<ol class="rank-list">
+<li><span class="rank-no">1</span><span class="rank-body"><strong>合租室友的秘密身份</strong><span>都市情感 · 连载中</span></span><span class="rank-state">追更 12.8 万</span></li>
+<li><span class="rank-no">2</span><span class="rank-body"><strong>她的心跳有回声</strong><span>青春恋爱 · 连载中</span></span><span class="rank-state">追更 11.4 万</span></li>
+<li><span class="rank-no">3</span><span class="rank-body"><strong>星轨之上的契约</strong><span>奇幻冒险 · 连载中</span></span><span class="rank-state">追更 9.7 万</span></li>
+<li><span class="rank-no">4</span><span class="rank-body"><strong>开在巷口的花店</strong><span>治愈日常 · 连载中</span></span><span class="rank-state">追更 8.2 万</span></li>
+<li><span class="rank-no">5</span><span class="rank-body"><strong>第七封未寄出的信</strong><span>悬疑推理 · 连载中</span></span><span class="rank-state">追更 7.6 万</span></li>
+<li><span class="rank-no">6</span><span class="rank-body"><strong>剑鸣长安夜</strong><span>国漫古风 · 连载中</span></span><span class="rank-state">追更 6.9 万</span></li>
+<li><span class="rank-no">7</span><span class="rank-body"><strong>三年二班的解谜社</strong><span>校园推理 · 连载中</span></span><span class="rank-state">追更 6.1 万</span></li>
+<li><span class="rank-no">8</span><span class="rank-body"><strong>不远处的灯塔</strong><span>治愈日常 · 已完结</span></span><span class="rank-state">追更 5.5 万</span></li>
+</ol>
+</div>
+<div class="tab-pane" id="pane-fresh" role="tabpanel">
+<ol class="rank-list">
+<li><span class="rank-no">1</span><span class="rank-body"><strong>合租室友的秘密身份</strong><span>今日 20:00 更新第 128 话</span></span><span class="rank-state">日更</span></li>
+<li><span class="rank-no">2</span><span class="rank-body"><strong>星轨之上的契约</strong><span>今日 18:30 更新第 74 话</span></span><span class="rank-state">日更</span></li>
+<li><span class="rank-no">3</span><span class="rank-body"><strong>第七封未寄出的信</strong><span>今日 12:00 更新第 45 话</span></span><span class="rank-state">周更两话</span></li>
+<li><span class="rank-no">4</span><span class="rank-body"><strong>她的心跳有回声</strong><span>今日 09:00 更新第 96 话</span></span><span class="rank-state">周更三话</span></li>
+<li><span class="rank-no">5</span><span class="rank-body"><strong>开在巷口的花店</strong><span>昨日 21:00 更新第 61 话</span></span><span class="rank-state">周更两话</span></li>
+<li><span class="rank-no">6</span><span class="rank-body"><strong>剑鸣长安夜</strong><span>昨日 19:00 更新第 88 话</span></span><span class="rank-state">周更</span></li>
+<li><span class="rank-no">7</span><span class="rank-body"><strong>三年二班的解谜社</strong><span>两日前更新第 52 话</span></span><span class="rank-state">半月更</span></li>
+<li><span class="rank-no">8</span><span class="rank-body"><strong>海边的第九排椅子</strong><span>三日前更新第 33 话</span></span><span class="rank-state">周更</span></li>
+</ol>
+</div>
+<div class="tab-pane" id="pane-praise" role="tabpanel">
+<ol class="rank-list">
+<li><span class="rank-no">1</span><span class="rank-body"><strong>不远处的灯塔</strong><span>读者评分 9.6 · 已完结</span></span><span class="rank-state">结局好评</span></li>
+<li><span class="rank-no">2</span><span class="rank-body"><strong>开在巷口的花店</strong><span>读者评分 9.4 · 连载中</span></span><span class="rank-state">情绪细腻</span></li>
+<li><span class="rank-no">3</span><span class="rank-body"><strong>第七封未寄出的信</strong><span>读者评分 9.3 · 连载中</span></span><span class="rank-state">伏笔扎实</span></li>
+<li><span class="rank-no">4</span><span class="rank-body"><strong>剑鸣长安夜</strong><span>读者评分 9.1 · 连载中</span></span><span class="rank-state">作画精致</span></li>
+<li><span class="rank-no">5</span><span class="rank-body"><strong>她的心跳有回声</strong><span>读者评分 8.9 · 连载中</span></span><span class="rank-state">人物立体</span></li>
+<li><span class="rank-no">6</span><span class="rank-body"><strong>星轨之上的契约</strong><span>读者评分 8.8 · 连载中</span></span><span class="rank-state">设定完整</span></li>
+<li><span class="rank-no">7</span><span class="rank-body"><strong>三年二班的解谜社</strong><span>读者评分 8.6 · 连载中</span></span><span class="rank-state">节奏紧凑</span></li>
+<li><span class="rank-no">8</span><span class="rank-body"><strong>海边的第九排椅子</strong><span>读者评分 8.4 · 连载中</span></span><span class="rank-state">画面通透</span></li>
+</ol>
+</div>
+</div>
+</section>
+
+<section class="section" id="update">
+<div class="wrap">
+<div class="section-head">
+<h2>更新机制说明</h2>
+<p>更新节奏透明化，读者可以据此安排追更计划，不必反复刷新确认</p>
+</div>
+<div class="update-grid">
+<article class="update-card">
+<div class="step">STEP 01</div>
+<h3>作者交稿与校对</h3>
+<p>新章节由创作团队完成交稿后进入校对流程，检查分镜衔接、文字错漏与页面顺序，确认无误后再进入发布队列。</p>
+</article>
+<article class="update-card">
+<div class="step">STEP 02</div>
+<h3>按档期排期发布</h3>
+<p>作品详情页会标注更新频率，如日更、周更、半月更等。排期确定后章节按固定时间上线，同时更新章节序号与更新时间。</p>
+</article>
+<article class="update-card">
+<div class="step">STEP 03</div>
+<h3>追更提醒与排序</h3>
+<p>加入追更的作品会集中显示在个人书架，并按最新更新时间排序。有新章节上线时，书架条目会同步标记，方便快速定位。</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" id="guide">
+<div class="wrap">
+<div class="section-head">
+<h2>新手阅读指南</h2>
+<p>第一次使用可以从这四个步骤开始，几分钟即可完成书架搭建</p>
+</div>
+<div class="guide">
+<ol class="guide-list">
+<li><b>第一步：从分类或榜单进入</b>不确定读什么时先看热门榜单，已有偏好则直接选分类。两个入口都支持继续按标签筛选，逐步缩小范围。</li>
+<li><b>第二步：查看作品详情再决定</b>详情页包含简介、题材标签、连载状态与更新频率。建议先读简介与首话，确认画风与叙事节奏符合口味再继续。</li>
+<li><b>第三步：加入追更建立个人书架</b>决定追读后加入书架，作品会按更新时间自动排列。连载中的作品会随章节更新自动前移，无需手动整理。</li>
+<li><b>第四步：调整阅读模式</b>阅读页可切换纵向滚动与翻页模式，也可调整画面适配方式。选择习惯的模式后，系统会在同设备上记住该设置。</li>
+</ol>
+<aside class="tips-box">
+<h3>提升阅读体验的小建议</h3>
+<ul>
+<li>在稳定网络环境下预先加载章节，翻页会更连续</li>
+<li>竖屏条漫建议使用纵向滚动模式，减少画面裁切</li>
+<li>长篇作品可先读前五话判断节奏，再决定是否追更</li>
+<li>已完结作品适合连续阅读，注意单次阅读时长</li>
+<li>书架内作品过多时，可按题材或状态分组整理</li>
+</ul>
+</aside>
+</div>
+</div>
+</section>
+
+<section class="section" id="faq">
+<div class="wrap">
+<div class="section-head">
+<h2>常见问题解答</h2>
+<p>关于内容、更新与阅读体验的高频疑问集中在这里</p>
+</div>
+<div class="faq-list">
+<details class="faq-item" open>
+<summary>平台上的漫画是正版内容吗</summary>
+<p>平台以正版授权内容为主要来源，作品由版权方或授权渠道提供。页面会标注作品状态与更新信息，若某部作品因授权调整暂时下线，相关章节会同步停止展示，建议以站内实际呈现为准。</p>
+</details>
+<details class="faq-item">
+<summary>新章节一般什么时候更新</summary>
+<p>不同作品档期不同，常见的有日更、周更与半月更。具体更新时间写在作品详情页的更新说明中，加入追更后，书架条目会随章节上线自动更新排序，便于第一时间发现新内容。</p>
+</details>
+<details class="faq-item">
+<summary>手机上阅读画面会被裁切吗</summary>
+<p>阅读页会按屏幕宽度自适应画面，并提供适配方式切换。竖屏条漫适合纵向滚动模式，跨页分镜可切换为宽度铺满或整页显示，读者可以按作品版式自行选择。</p>
+</details>
+<details class="faq-item">
+<summary>换设备后阅读进度还在吗</summary>
+<p>阅读进度与书架记录支持跨端同步，在同一账号下切换手机、平板或电脑访问，会回到上次阅读的章节位置。若同步出现延迟，刷新页面通常即可恢复。</p>
+</details>
+<details class="faq-item">
+<summary>可以按题材查找特定类型的作品吗</summary>
+<p>可以。分类页支持地域维度与题材维度组合筛选，例如在国漫类别下继续选择古风或仙侠标签，再按连载状态排序，就能在较小范围内快速定位符合偏好的作品。</p>
+</details>
+<details class="faq-item">
+<summary>已完结的作品还能继续读吗</summary>
+<p>已完结作品会保留完整章节，标签与详情页会明确标注完结状态，读者可以连续阅读完整故事线，不必等待更新。榜单中也设有完结作品的口碑排序入口。</p>
+</details>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="wrap">
+<div class="cta-band">
+<h2>现在就开始搭建你的漫画书架</h2>
+<p>从分类挑一个感兴趣的题材，或是先看榜单里读者追得最多的作品，把想读的都收进书架，下一次打开就能接着读。</p>
+<a class="btn-primary" href="#category">进入分类页</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h4>女神漫画</h4>
+<p>面向中文读者的在线漫画阅读平台，专注正版内容组织与阅读体验优化，覆盖国漫、日漫、韩漫等主要类别。</p>
+</div>
+<div>
+<h4>内容入口</h4>
+<ul>
+<li><a href="#category">漫画分类</a></li>
+<li><a href="#ranking">热门榜单</a></li>
+<li><a href="#update">更新机制</a></li>
+</ul>
+</div>
+<div>
+<h4>使用帮助</h4>
+<ul>
+<li><a href="#guide">阅读指南</a></li>
+<li><a href="#faq">常见问题</a></li>
+<li><a href="#intro">平台介绍</a></li>
+</ul>
+</div>
+<div>
+<h4>阅读提示</h4>
+<ul>
+<li><a href="#faq">正版内容说明</a></li>
+<li><a href="#faq">跨端同步说明</a></li>
+<li><a href="#faq">更新档期说明</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+<p>本站内容以正版授权作品为主，版权归原版权方所有。请合理安排阅读时间，注意用眼健康。</p>
+</div>
+</div>
+</footer>
+
+<script>
+(function(){
+var buttons = document.querySelectorAll('.tab-btn');
+var panes = document.querySelectorAll('.tab-pane');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function(){
+    var target = this.getAttribute('data-tab');
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].classList.remove('active');
+      buttons[j].setAttribute('aria-selected','false');
+    }
+    for (var k = 0; k < panes.length; k++) {
+      panes[k].classList.remove('active');
+    }
+    this.classList.add('active');
+    this.setAttribute('aria-selected','true');
+    var pane = document.getElementById('pane-' + target);
+    if (pane) {
+      pane.classList.add('active');
+    }
+  });
+}
+})();
+</script>
+</body>
+</html>
